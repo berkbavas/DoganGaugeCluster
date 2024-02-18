@@ -38,7 +38,5 @@ Window {
                 anchors.fill: parent
             }
         }
-
     }
-
 }

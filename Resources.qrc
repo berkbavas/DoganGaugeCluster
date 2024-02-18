@@ -1,11 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
-        <file>Speedometer.qml</file>
-        <file>Tachometer.qml</file>
-        <file>Fuelmeter.qml</file>
-        <file>TemperatureMeter.qml</file>
-        <file>Indicator.qml</file>
         <file>Resources/Indicators/abs.svg</file>
         <file>Resources/Indicators/battery-low.svg</file>
         <file>Resources/Indicators/battery.svg</file>
@@ -18,7 +12,13 @@
         <file>Resources/Indicators/shelter-belt.svg</file>
         <file>Resources/Indicators/temperature.svg</file>
         <file>Resources/Indicators/wiper.svg</file>
-        <file>MiddleGauge.qml</file>
-        <file>GaugeContainer.qml</file>
+        <file>Qml/Fuelmeter.qml</file>
+        <file>Qml/GaugeContainer.qml</file>
+        <file>Qml/Indicator.qml</file>
+        <file>Qml/MiddleGauge.qml</file>
+        <file>Qml/Speedometer.qml</file>
+        <file>Qml/Tachometer.qml</file>
+        <file>Qml/TemperatureMeter.qml</file>
+        <file>Qml/Main.qml</file>
     </qresource>
 </RCC>

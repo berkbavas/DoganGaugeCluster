@@ -17,8 +17,6 @@ Item {
         }
     }
 
-
-
     GaugeContainer {
         y: 0.625 * parent.height
         width: parent.width
@@ -46,5 +44,4 @@ Item {
         width: 0.07 * parent.width
         height: 0.07 * parent.width
     }
-
 }
