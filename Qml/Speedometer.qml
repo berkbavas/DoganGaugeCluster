@@ -56,7 +56,7 @@ CircularGauge {
             implicitHeight: 82 / 90 * outerRadius
             antialiasing: true
             color: "#ED1C24"
-            radius: 2
+            radius: 4
         }
 
         background: Item {

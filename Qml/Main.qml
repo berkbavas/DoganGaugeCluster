@@ -5,8 +5,8 @@ import QtGraphicalEffects 1.0
 
 Window {
     id: window
-    width: 1280
-    height: 720
+    width: 1600
+    height: 900
     visible: true
     color: "#101010"
 
