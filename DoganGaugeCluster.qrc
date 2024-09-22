@@ -2,39 +2,39 @@
     <qresource prefix="/">
         <file>qml/Main.qml</file>
         <file>qml/Constants.qml</file>
-        <file>resources/fonts/InriaSans/InriaSans-Bold.ttf</file>
-        <file>resources/fonts/InriaSans/InriaSans-BoldItalic.ttf</file>
-        <file>resources/fonts/InriaSans/InriaSans-Italic.ttf</file>
-        <file>resources/fonts/InriaSans/InriaSans-Light.ttf</file>
-        <file>resources/fonts/InriaSans/InriaSans-LightItalic.ttf</file>
-        <file>resources/fonts/InriaSans/InriaSans-Regular.ttf</file>
-        <file>resources/fonts/InriaSans/OFL.txt</file>
-        <file>resources/images/abs.svg</file>
-        <file>resources/images/battery-low.svg</file>
-        <file>resources/images/battery.svg</file>
-        <file>resources/images/caution.svg</file>
-        <file>resources/images/fuel.svg</file>
-        <file>resources/images/headlight.svg</file>
-        <file>resources/images/lamp.svg</file>
-        <file>resources/images/oilcup.svg</file>
-        <file>resources/images/park.svg</file>
-        <file>resources/images/shelter-belt.svg</file>
-        <file>resources/images/temperature.svg</file>
-        <file>resources/images/wiper.svg</file>
+        <file>resources/Fonts/InriaSans/InriaSans-Bold.ttf</file>
+        <file>resources/Fonts/InriaSans/InriaSans-BoldItalic.ttf</file>
+        <file>resources/Fonts/InriaSans/InriaSans-Italic.ttf</file>
+        <file>resources/Fonts/InriaSans/InriaSans-Light.ttf</file>
+        <file>resources/Fonts/InriaSans/InriaSans-LightItalic.ttf</file>
+        <file>resources/Fonts/InriaSans/InriaSans-Regular.ttf</file>
+        <file>resources/Fonts/InriaSans/OFL.txt</file>
+        <file>resources/Images/abs.svg</file>
+        <file>resources/Images/battery-low.svg</file>
+        <file>resources/Images/battery.svg</file>
+        <file>resources/Images/caution.svg</file>
+        <file>resources/Images/fuel.svg</file>
+        <file>resources/Images/headlight.svg</file>
+        <file>resources/Images/lamp.svg</file>
+        <file>resources/Images/oilcup.svg</file>
+        <file>resources/Images/park.svg</file>
+        <file>resources/Images/shelter-belt.svg</file>
+        <file>resources/Images/temperature.svg</file>
+        <file>resources/Images/wiper.svg</file>
         <file>qml/qmldir</file>
-        <file>resources/fonts/Roboto/LICENSE.txt</file>
-        <file>resources/fonts/Roboto/Roboto-Black.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-BlackItalic.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-Bold.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-BoldItalic.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-Italic.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-Light.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-LightItalic.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-Medium.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-MediumItalic.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-Regular.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-Thin.ttf</file>
-        <file>resources/fonts/Roboto/Roboto-ThinItalic.ttf</file>
+        <file>resources/Fonts/Roboto/LICENSE.txt</file>
+        <file>resources/Fonts/Roboto/Roboto-Black.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-BlackItalic.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-Bold.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-BoldItalic.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-Italic.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-Light.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-LightItalic.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-Medium.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-MediumItalic.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-Regular.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-Thin.ttf</file>
+        <file>resources/Fonts/Roboto/Roboto-ThinItalic.ttf</file>
         <file>qml/Components/Foreground.qml</file>
         <file>qml/Components/Needle.qml</file>
         <file>qml/Components/Tickmark.qml</file>

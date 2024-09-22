@@ -8,7 +8,7 @@ Item {
     Image {
         id: image
         anchors.fill: parent
-        source: "qrc:/resources/images/" + type + ".svg"
+        source: "qrc:/resources/Images/" + type + ".svg"
         antialiasing: true
         fillMode: Image.PreserveAspectFit
         visible: false

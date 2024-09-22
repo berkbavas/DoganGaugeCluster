@@ -14,11 +14,11 @@ Window {
     property double scaling: Math.min(width / 720, height / 720)
 
     FontLoader {
-        source: "qrc:/resources/fonts/InriaSans/InriaSans-Bold.ttf"
+        source: "qrc:/resources/Fonts/InriaSans/InriaSans-Bold.ttf"
     }
 
     FontLoader {
-        source: "qrc:/resources/fonts/Roboto/Roboto-Bold.ttf"
+        source: "qrc:/resources/Fonts/Roboto/Roboto-Bold.ttf"
     }
 
     Item {
