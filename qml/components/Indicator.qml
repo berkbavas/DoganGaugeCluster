@@ -3,12 +3,12 @@ import QtGraphicalEffects 1.0
 
 Item {
     id: root
-    property string type
+    property string type: ""
 
     Image {
         id: image
         anchors.fill: parent
-        source: "../Resources/Indicators/" + type + ".svg"
+        source: "qrc:/resources/images/" + type + ".svg"
         antialiasing: true
         fillMode: Image.PreserveAspectFit
         visible: false
