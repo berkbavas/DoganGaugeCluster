@@ -8,11 +8,13 @@ import "../Components"
 
 GaugeContainer {
     id: root
+    clip: true
 
     CircularGauge {
-        value: root.value
+        width: root.width
+        height: root.width
 
-        anchors.fill: parent
+        value: root.value
         minimumValue: 0
         maximumValue: 100
         stepSize: 1
@@ -51,20 +53,13 @@ GaugeContainer {
 
             needle: Needle {
                 outerRadius: style.outerRadius
+                y: 0
+                height: 0.7 * outerRadius
             }
 
             background: Item {
                 width: 2 * outerRadius
                 height: 2 * outerRadius
-
-
-                Indicator {
-                    type: "fuel"
-                    x: 0.900 * outerRadius
-                    y: 0.500 * outerRadius
-                    width: 0.1 * parent.width
-                    height: 0.1 * parent.width
-                }
             }
         }
     }

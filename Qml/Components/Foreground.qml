@@ -14,7 +14,7 @@ Item {
 
             GradientStop {
                 position: 0.0
-                color: "#333333"
+                color: "#1f1f1f"
             }
             GradientStop {
                 position: 1.0

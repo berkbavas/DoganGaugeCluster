@@ -3,6 +3,5 @@ import QtGraphicalEffects 1.15
 
 Rectangle {
     property double value
-
     color: "#000000"
 }

@@ -23,9 +23,9 @@ GaugeContainer {
             maximumValueAngle: 130
             tickmarkStepSize: 5
             labelStepSize: 10
-            minorTickmarkCount: 3
+            minorTickmarkCount: 5
             labelInset: 14 / 90 * outerRadius
-            tickmarkInset: 30 / 100 * outerRadius
+            tickmarkInset: 28.5 / 100 * outerRadius
             minorTickmarkInset: 30 / 100 * outerRadius
 
             tickmark: Tickmark {
@@ -41,8 +41,7 @@ GaugeContainer {
                 text: styleData.value
             }
 
-            foreground: Foreground {
-                outerRadius: style.outerRadius
+            foreground: Item {
             }
 
             needle: Needle {
@@ -50,8 +49,14 @@ GaugeContainer {
             }
 
             background: Item {
+                id: background
                 width: 2 * outerRadius
                 height: 2 * outerRadius
+
+                Foreground {
+                    outerRadius: style.outerRadius
+                    anchors.centerIn: background
+                }
 
                 // High speed indicator (Orange - Red)
                 Canvas {

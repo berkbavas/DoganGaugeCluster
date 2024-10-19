@@ -8,11 +8,13 @@ import "../Components"
 
 GaugeContainer {
     id: root
+    clip: true
 
     CircularGauge {
-        value: root.value
+        width: root.width
+        height: root.width
 
-        anchors.fill: parent
+        value: root.value
         minimumValue: 50
         maximumValue: 130
         stepSize: 1
@@ -51,6 +53,8 @@ GaugeContainer {
 
             needle: Needle {
                 outerRadius: style.outerRadius
+                y: 0
+                height: 0.7 * outerRadius
             }
 
             background: Item {
@@ -67,15 +71,8 @@ GaugeContainer {
                     color: Constants.labelColor
                     font.weight: Font.Black
                 }
-
-                Indicator {
-                    type: "temperature"
-                    x: 0.900 * outerRadius
-                    y: 0.500 * outerRadius
-                    width: 0.1 * parent.width
-                    height: 0.1 * parent.width
-                }
             }
         }
     }
+
 }
