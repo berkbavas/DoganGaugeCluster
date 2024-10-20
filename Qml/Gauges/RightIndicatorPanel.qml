@@ -5,8 +5,8 @@ import "../Components"
 Row {
 
     property double scaling: 1.0
-    property double indicatorSize: 56 * scaling
-    spacing: 30 * scaling
+    property double indicatorSize: 74 * scaling
+    spacing: 32 * scaling
 
     Indicator {
         type: "battery"
@@ -15,9 +15,15 @@ Row {
     }
 
     Indicator {
+        type: "battery-low"
+        size: indicatorSize
+        indicatorColor: "#FF0000"
+    }
+
+    Indicator {
         type: "oilcup"
         size: indicatorSize
-        indicatorColor: "#F0C108"
+        indicatorColor: "#FF9000"
     }
 
     Indicator {

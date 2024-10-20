@@ -5,8 +5,8 @@ import "../Components"
 Row {
 
     property double scaling: 1.0
-    property double indicatorSize: 56 * scaling
-    spacing: 30 * scaling
+    property double indicatorSize: 74 * scaling
+    spacing: 32 * scaling
 
     Indicator {
         type: "headlight"
@@ -28,6 +28,12 @@ Row {
 
     Indicator {
         type: "wiper"
+        size: indicatorSize
+        indicatorColor: "#57FA62"
+    }
+
+    Indicator {
+        type: "park"
         size: indicatorSize
         indicatorColor: "#FFFFFF"
     }
