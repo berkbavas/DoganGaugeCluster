@@ -5,8 +5,8 @@ import "../Components"
 Row {
 
     property double scaling: 1.0
-    property double indicatorSize: 74 * scaling
-    spacing: 32 * scaling
+    property double indicatorSize: 36 * scaling
+    spacing: 16 * scaling
 
     Indicator {
         type: "battery"

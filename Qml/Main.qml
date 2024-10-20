@@ -59,6 +59,7 @@ Window {
 
         LeftIndicatorPanel {
             id: leftIndicatorPanel
+            scaling: window.scaling
             anchors.top: speedometer.bottom
             anchors.horizontalCenter: speedometer.horizontalCenter
         }
@@ -66,6 +67,7 @@ Window {
 
         RightIndicatorPanel {
             id: rightIndicatorPanel
+            scaling: window.scaling
             anchors.top: tachometer.bottom
             anchors.horizontalCenter: tachometer.horizontalCenter
         }
