@@ -11,7 +11,6 @@
         <file>Qml/Components/Label.qml</file>
         <file>Qml/Components/TickmarkLabel.qml</file>
         <file>Qml/Gauges/Fuelmeter.qml</file>
-        <file>Qml/Gauges/GaugeContainer.qml</file>
         <file>Qml/Gauges/Speedometer.qml</file>
         <file>Qml/Gauges/Tachometer.qml</file>
         <file>Qml/Gauges/TemperatureMeter.qml</file>
@@ -47,5 +46,9 @@
         <file>Resources/Fonts/Roboto/Roboto-Regular.ttf</file>
         <file>Resources/Fonts/Roboto/Roboto-Thin.ttf</file>
         <file>Resources/Fonts/Roboto/Roboto-ThinItalic.ttf</file>
+        <file>Qml/Gauges/LeftIndicatorPanel.qml</file>
+        <file>Qml/Gauges/MiddleGauges.qml</file>
+        <file>Qml/Components/GoodInnerShadow.qml</file>
+        <file>Qml/Gauges/RightIndicatorPanel.qml</file>
     </qresource>
 </RCC>

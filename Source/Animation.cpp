@@ -20,10 +20,10 @@ void Animation::Update()
 
     double time = ANIMATION_SPEED * mAnimationTime;
 
-    mData->SetSpeed(200 * sin(time) * sin(time));
-    mData->SetThrottle(75 * std::abs(sin(4 * time)));
-    mData->SetFuelTank(100 - 50 * sin(time));
-    mData->SetTemperature(90 + 40 * sin(time));
+    mData->SetSpeed(200 * std::abs(std::sin(0.5 * time)));
+    mData->SetThrottle(80 * std::abs(std::sin(2 * time)));
+    mData->SetFuelTank(100 * std::abs(std::sin(0.25 * time)));
+    mData->SetTemperature(90 + 40 * std::abs(std::sin(0.75 * time)));
 }
 
 void Animation::Init()

@@ -1,0 +1,34 @@
+import QtQuick 2.0
+
+import "../Components"
+
+Row {
+
+    property double scaling: 1.0
+    property double indicatorSize: 56 * scaling
+    spacing: 30 * scaling
+
+    Indicator {
+        type: "headlight"
+        size: indicatorSize
+        indicatorColor: "#57FA62"
+    }
+
+    Indicator {
+        type: "caution"
+        size: indicatorSize
+        indicatorColor: "#FF0000"
+    }
+
+    Indicator {
+        type: "lamp"
+        size: indicatorSize
+        indicatorColor: "#20CFFF"
+    }
+
+    Indicator {
+        type: "wiper"
+        size: indicatorSize
+        indicatorColor: "#FFFFFF"
+    }
+}

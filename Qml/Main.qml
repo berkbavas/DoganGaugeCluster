@@ -11,6 +11,8 @@ Window {
     height: 720
     visible: true
     color: "#000000"
+    minimumWidth: 640
+    minimumHeight: 480
 
     property double scaling: 2 * Math.min(width / 1920, height / 1080)
 
@@ -23,77 +25,49 @@ Window {
     }
 
     Item {
+        id: container
         x: 0
         y: 0
-        width: window.width
-        height: window.height
+        width: speedometer.width + middleGauges.width + tachometer.width
+        height: 320 * scaling
+        anchors.centerIn: parent
 
-        Row {
-            spacing: 12 * scaling
+        Speedometer {
+            id: speedometer
+            width: 320 * scaling
+            height: 320 * scaling
+            value: drivingData.speed
+            anchors.left: container.left
+            anchors.verticalCenter: container.verticalCenter
+        }
 
-            anchors {
-                centerIn: parent
-                margins: 16 * scaling
-            }
+        MiddleGauges {
+            id: middleGauges
+            scaling: window.scaling
+            anchors.left: speedometer.right
+            anchors.verticalCenter: container.verticalCenter
+        }
 
-            Speedometer {
-                id: speedometer
-                width: 320 * scaling
-                height: 320 * scaling
-                value: drivingData.speed
-            }
+        Tachometer {
+            id: tachometer
+            width: 320 * scaling
+            height: 320 * scaling
+            value: drivingData.throttle
+            anchors.left: middleGauges.right
+            anchors.verticalCenter: container.verticalCenter
+        }
 
-            Item {
-                anchors.verticalCenter: parent.verticalCenter
-                width: 240 * scaling
-                height: temperatureMeter.height + mask.height + fuelmeter.height
+        LeftIndicatorPanel {
+            id: leftIndicatorPanel
+            anchors.top: speedometer.bottom
+            anchors.horizontalCenter: speedometer.horizontalCenter
+        }
 
-                TemperatureMeter {
-                    id: temperatureMeter
-                    width: 240 * scaling
-                    height: 80 * scaling
-                    value: drivingData.temperature
-                }
 
-                Rectangle {
-                    id: mask
-                    color: "#000000"
-                    anchors.top: temperatureMeter.bottom
-                    width: 240 * scaling
-                    height: 64 * scaling
-                    z: 999
-
-                    Indicator {
-                        type: "temperature"
-                        width: 20 * scaling
-                        height: 20 * scaling
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.top: parent.top
-                    }
-
-                    Indicator {
-                        type: "fuel"
-                        width: 20 * scaling
-                        height: 20 * scaling
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.bottom: parent.bottom
-                    }
-                }
-
-                Fuelmeter {
-                    id: fuelmeter
-                    anchors.top: mask.bottom
-                    width: 240 * scaling
-                    height: 80 * scaling
-                    value: drivingData.fuelTank
-                }
-            }
-
-            Tachometer {
-                width: 320 * scaling
-                height: 320 * scaling
-                value: drivingData.throttle
-            }
+        RightIndicatorPanel {
+            id: rightIndicatorPanel
+            anchors.top: tachometer.bottom
+            anchors.horizontalCenter: tachometer.horizontalCenter
         }
     }
 }

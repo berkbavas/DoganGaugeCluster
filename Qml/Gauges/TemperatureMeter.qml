@@ -6,9 +6,11 @@ import QtGraphicalEffects 1.0
 import ".."
 import "../Components"
 
-GaugeContainer {
+Item {
     id: root
     clip: true
+
+    property double value
 
     CircularGauge {
         width: root.width

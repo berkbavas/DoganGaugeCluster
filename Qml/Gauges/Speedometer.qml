@@ -6,13 +6,16 @@ import QtGraphicalEffects 1.0
 import ".."
 import "../Components"
 
-GaugeContainer {
+Item {
     id: root
+    width: 320
+    height: 320
+
+    property double value
 
     CircularGauge {
         value: root.value
-
-        anchors.fill: parent
+        anchors.fill: root
         minimumValue: 0
         maximumValue: 200
         stepSize: 1
@@ -23,9 +26,9 @@ GaugeContainer {
             maximumValueAngle: 130
             tickmarkStepSize: 10
             labelStepSize: 20
-            minorTickmarkCount: 5
+            minorTickmarkCount: 1
             labelInset: 14 / 90 * outerRadius
-            tickmarkInset: 28.5 / 100 * outerRadius
+            tickmarkInset: 30 / 100 * outerRadius
             minorTickmarkInset: 30 / 100 * outerRadius
 
             tickmark: Tickmark {

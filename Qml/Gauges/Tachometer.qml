@@ -6,8 +6,10 @@ import QtGraphicalEffects 1.0
 import ".."
 import "../Components"
 
-GaugeContainer {
+Item {
     id: root
+
+    property double value
 
     CircularGauge {
         value: root.value
@@ -23,9 +25,9 @@ GaugeContainer {
             maximumValueAngle: 130
             tickmarkStepSize: 5
             labelStepSize: 10
-            minorTickmarkCount: 5
+            minorTickmarkCount: 0
             labelInset: 14 / 90 * outerRadius
-            tickmarkInset: 28.5 / 100 * outerRadius
+            tickmarkInset: 30 / 100 * outerRadius
             minorTickmarkInset: 30 / 100 * outerRadius
 
             tickmark: Tickmark {
@@ -41,8 +43,7 @@ GaugeContainer {
                 text: styleData.value
             }
 
-            foreground: Item {
-            }
+            foreground: Item {}
 
             needle: Needle {
                 outerRadius: style.outerRadius
@@ -58,29 +59,22 @@ GaugeContainer {
                     anchors.centerIn: background
                 }
 
-                // High speed indicator (Orange - Red)
                 Canvas {
                     anchors.fill: parent
                     onPaint: {
                         var ctx = getContext("2d")
                         ctx.reset()
 
-                        ctx.lineWidth = 3 / 90 * outerRadius
+                        ctx.lineWidth = 4 / 90 * outerRadius
 
                         ctx.beginPath()
-                        ctx.arc(outerRadius, outerRadius,
-                                outerRadius - ctx.lineWidth / 2 - 38 / 100 * outerRadius,
-                                degreesToRadians(valueToAngle(60) - 90),
-                                degreesToRadians(valueToAngle(80.5) - 90))
+                        ctx.arc(outerRadius, outerRadius, outerRadius - ctx.lineWidth / 2 - 38 / 100 * outerRadius, degreesToRadians(valueToAngle(60) - 90), degreesToRadians(valueToAngle(80.5) - 90))
                         ctx.strokeStyle = "#D32300"
                         ctx.stroke()
                         ctx.closePath()
 
                         ctx.beginPath()
-                        ctx.arc(outerRadius, outerRadius,
-                                outerRadius - ctx.lineWidth / 2 - 38 / 100 * outerRadius,
-                                degreesToRadians(valueToAngle(57) - 90),
-                                degreesToRadians(valueToAngle(60) - 90))
+                        ctx.arc(outerRadius, outerRadius, outerRadius - ctx.lineWidth / 2 - 38 / 100 * outerRadius, degreesToRadians(valueToAngle(55) - 90), degreesToRadians(valueToAngle(60) - 90))
                         ctx.strokeStyle = "#FFC90E"
                         ctx.stroke()
                         ctx.closePath()

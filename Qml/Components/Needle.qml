@@ -10,13 +10,13 @@ Canvas {
         var ctx = getContext('2d')
 
         var gradient = ctx.createLinearGradient(0, height / 2, width, height / 2)
-        gradient.addColorStop(0, '#ED1C24')
-        gradient.addColorStop(1, '#7A0E13')
+        gradient.addColorStop(0, '#CC0909')
+        gradient.addColorStop(1, '#5E0404')
         ctx.fillStyle = gradient
 
         ctx.beginPath()
-        ctx.moveTo(0.1 * width, 0)
-        ctx.lineTo(0.9 * width, 0)
+        ctx.moveTo(0.3 * width, 0)
+        ctx.lineTo(0.7 * width, 0)
         ctx.lineTo(width, height)
         ctx.lineTo(0, height)
         ctx.closePath()

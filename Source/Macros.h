@@ -21,3 +21,13 @@ private: \
         m##MEMBER = NEW_VALUE; \
         emit MEMBER##Changed(); \
     }
+
+#define DEFINE_SET_METHOD_FOR_BOOL(CLASS, MEMBER) \
+    void CLASS::Set##MEMBER(bool NEW_VALUE) \
+    { \
+        if (NEW_VALUE == m##MEMBER) { \
+            return; \
+        } \
+        m##MEMBER = NEW_VALUE; \
+        emit MEMBER##Changed(); \
+    }
