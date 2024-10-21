@@ -7,4 +7,4 @@ Written in `QML Qt 5.15.2` and `C++`.
 3. Build & run.
 
 ## Video
-https://github.com/user-attachments/assets/89e61694-e702-4f09-8db8-b754cfd9d635
+https://github.com/user-attachments/assets/4ca3bf91-0553-47e0-89d2-3799d329b87d
